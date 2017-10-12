@@ -12,6 +12,10 @@
 
 namespace Halide {
 
+namespace Internal {
+template<typename T2> class GeneratorInput_Buffer;
+}
+
 /** An Image parameter to a halide pipeline. E.g., the input image. */
 class ImageParam : public OutputImageParam {
     template<typename T2> friend class ::Halide::Internal::GeneratorInput_Buffer;
